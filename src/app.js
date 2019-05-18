@@ -4,7 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
-const port = process.env.PORT() || 3000
+const port = process.env.PORT || 3000
 
 const publicpath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../templates/views')
