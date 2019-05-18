@@ -4,6 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
+const port = process.env.PORT() || 3000
 
 const publicpath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../templates/views')
@@ -92,6 +93,6 @@ app.get('*', (req, res) => {
         errorMessage: 'page not found'
     })
 })
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('The server has started')
 })
