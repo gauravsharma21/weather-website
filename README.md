@@ -12,5 +12,5 @@ http://common-weather-app.herokuapp.com
 * Using node.js these requests are asynchronously sent and the data is returned to the user
 
 # Stack
-* Express Framework - To set up the server Environment
+* Express Framework - To set up the server Environment.
 * HandleBars - For dynamic templating
